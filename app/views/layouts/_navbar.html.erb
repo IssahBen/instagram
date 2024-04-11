@@ -29,7 +29,14 @@
                <%= image_tag 'user-pp.png', class: "img-thumbnail rounded-circle", style: "width: 2rem" %>
              <% end %>
            </a>
+
            <ul class="dropdown-menu">
+              <li>
+               <%= link_to 'Profile', user_path(current_user), class: "dropdown-item" %>
+             </li>
+             <li>
+               <%= link_to 'Settings', edit_user_registration_path, class: "dropdown-item" %>
+             </li>
              <li>
                <%= button_to 'Log out', destroy_user_session_path, class: "dropdown-item", method: :delete%>
              </li>
