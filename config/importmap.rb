@@ -9,3 +9,8 @@ pin "popper", to: 'popper.js', preload: true
 
 pin "bootstrap", to: 'bootstrap.min.js', preload: true
 pin "@rails/ujs", to: "@rails--ujs.js" # @7.1.3
+pin "filepond" # @4.30.6
+
+pin_all_from "app/javascript/custom", under: "custom"
+pin "filepond-plugin-image-preview" # @4.6.12
+pin "filepond-plugin-file-validate-type" # @1.2.9
