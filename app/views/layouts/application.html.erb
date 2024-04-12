@@ -14,8 +14,13 @@
  
    <% if current_user %>
        <%= render 'layouts/navbar' %>
+
      <% end %>
-    <%= yield %>
-    <%= render 'posts/form', post: Post.new %>
+    <div><%= yield %></div>
+    <div>
+      <% if current_user %>
+        <%= render 'posts/form', post: Post.new %>
+      <% end %>
+    </div>
   </body>
 </html>

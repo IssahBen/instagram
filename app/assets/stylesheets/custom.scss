@@ -52,10 +52,9 @@ body {
     margin-right: .5rem
 }
 
-card::-webkit-scrollbar {
+.card::-webkit-scrollbar {
     width: 0;
 }
-
 
 .filepond--item {
     width: calc(50% - 0.5em);
@@ -64,7 +63,6 @@ card::-webkit-scrollbar {
 .filepond--root {
     max-height: 20em;
 }
-
 
 .color-red {
     color: red;
@@ -94,7 +92,6 @@ card::-webkit-scrollbar {
 .profile-post:hover .profile-post-likes {
     visibility: visible;
 }
-
 
 
 .profile-edit-btn {
