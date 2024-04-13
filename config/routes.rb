@@ -24,4 +24,5 @@ Rails.application.routes.draw do
   delete 'decline_follow', to: 'follows#decline_follow', as: :decline_follow
   resources :conversations, only: [:index,:show,]
   resources :user_conversations,only: [:create,:destroy]
+  resources :messages
 end

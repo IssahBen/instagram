@@ -1,0 +1,17 @@
+<div class="col-md-6 col-lg-7 col-xl-8" style="width: 100%;">
+    <%= turbo_frame_tag "messages-container"  do %>
+        <div class="list-unstyled gap-5">
+            <% conversation.messages.each do |message|%>
+                <%= render "messages/message",message: message%>
+            <% end %>
+
+              
+
+        </div>
+    <% end %>
+    <li class=" mb-3">
+        <%= turbo_frame_tag "messages_form" do %>
+            <%= render "messages/form",message: Message.new %>
+        <% end %>
+    </li>
+</div>

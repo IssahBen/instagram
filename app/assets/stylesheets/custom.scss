@@ -130,6 +130,7 @@ body {
 table {
     height: 100vh;
     overflow: scroll;
+    background-color: black;
 }
 
 .conversation-left {
@@ -152,4 +153,37 @@ table {
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 20px;
+}
+
+
+
+
+.sticky-footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+.input-group {
+    background-color: white;
+}
+
+.right {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.start-conversation {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.participant-name {
+    color: white;
 }

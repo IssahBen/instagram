@@ -3,7 +3,7 @@
 
   <!-- Element on the left -->
   <div class=" left d-flex  justify-content-center "  style="width: 50vh;">
-        <div class="conversation-left " style="background-color:black;">
+        <div class="conversation-left " style="background-color:rgb(33, 37, 41);">
             <div class ="conversation-search " > 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <h3 id="search-contacts"><%=current_user.username %></h3><span class="navbar-toggler-icon "></span>
@@ -34,9 +34,9 @@
   <div class="vr" style="height: 100vh;"></div>
 
   <!-- Element on the left -->
-  <div class=""  style="width: 50vh;">
-    <%= turbo_frame_tag "messagiing_box" do %>
-        <h2 class="text-center" >Start A Conversation</h2>
+  <div class="right"  style="width: 50vh;">
+    <%= turbo_frame_tag "messaging_box" do %>
+        <h2 class="start-conversation text-center" >Start A Conversation <i class="fa-brands fa-facebook-messenger fa-xl"></i></h2>
     <% end %>
   </div>
 

@@ -3,9 +3,12 @@
    <div class="d-flex">
     <%= image_tag participant.profile_pic.attached? ? participant.profile_pic : 'user-pp.png', class: "img-thumbnail rounded-circle", style: "width: 2.5rem" %>
      <div class="d-flex flex-column mx-3 justify-content-center">
-     <small class="fw-bold" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;max-width:10rem"><%= link_to participant, class: "a-decoration-none", data: {turbo: 'false'} do %><%= participant.username %><% end %></small>
-     </div>
+      <small class=" fw-bold" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;max-width:10rem;"><%= link_to conversation, class: " participant-name a-decoration-none" do %><%= participant.username.capitalize %><% end %></small>
+                        
+            <small style ="color:grey;"><p class="last-message"><%= conversation.messages.last.content  %>... <%= time_ago_in_words(conversation.messages.last.created_at)%> </p></small>
+      </div>       
    </div>
-
-  
+</div>
+<div class="">
+    
 </div>
