@@ -7,6 +7,9 @@ class User < ApplicationRecord
   has_one_attached :profile_pic
   has_many :likes
   has_many :comments 
+  has_many :user_conversations
+  has_many :conversations,through: :user_conversations 
+  has_many :messages
 
 
   has_many :accepted_received_requests ,->{where(accepted: true )},class_name:"Follow",foreign_key: "followed_id"
