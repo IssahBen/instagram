@@ -113,3 +113,43 @@ body {
     text-decoration: none;
     color: black
 }
+
+.divider {
+    width: 20px;
+    background-color: black;
+
+}
+
+.main-divider {
+    width: 100%;
+    background-color: black;
+}
+
+
+
+table {
+    height: 100vh;
+    overflow: scroll;
+}
+
+.conversation-left {
+    border: 1px solid black;
+    margin-right: 200px;
+    margin-top: 20px;
+    border-radius: 2%;
+}
+
+#search-contacts {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main {
+    background-image: asset_url('try4.jpg');
+}
+
+.conversation-search {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
