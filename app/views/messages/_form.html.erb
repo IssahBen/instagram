@@ -1,5 +1,5 @@
 
- <%= form_with(model: Message.new,id: dom_id(message),class:"sticky-footer") do |form| %>
+ <%= form_with(model: Message.new,id: "messageForm",class:"sticky-footer",data: { controller: :form, action: "turbo:submit-end->form#clear" }) do |form| %>
     <%if message.errors.any? %>
         <div  class=" alert alert-success alert-dismissible fade show col-sm-9" role="alert" id="errors-messages">
             <h2><%= pluralize(message.errors.count, "error")%>dfddfdfdfd</h2>
@@ -13,7 +13,7 @@
         </div>
     <% end %>
   <div class="input-group mb-3">
-  <%= form.text_field :content, placeholder: 'Send a message', class: 'form-control' %>
+  <%= form.text_field :content, placeholder: 'Send a message', class: '  form-control',id:"messageInput" %>
   <%= form.hidden_field :user_id,value: current_user.id %>
   <%= form.hidden_field :conversation_id,value: current_conversation.id %>
   <button class="btn btn-info btn-rounded float-end"" type="submit" id="button-addon2"><i class="fa-duotone fa-paper-plane-top"></i></button>

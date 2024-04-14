@@ -1,11 +1,15 @@
 class ApplicationController < ActionController::Base
     before_action :configure_permitted_parameters, if: :devise_controller?
     before_action :authenticate_user!
-    helper_method :current_conversation
+    helper_method :current_conversation,:main_user
 
     def current_conversation 
         @conversation||= Conversation.find(session[:conversation_id]) if session[:conversation_id]
     end 
+
+    def main_user 
+      @user||= current_user 
+    end
   protected
 
   def configure_permitted_parameters

@@ -24,3 +24,4 @@ function toggleButton() {
 document.addEventListener('turbo:load', function () {
     toggleButton();
 });
+
