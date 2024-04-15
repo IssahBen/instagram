@@ -1,9 +1,9 @@
 
 
-                <li class=" participant d-flex justify-content-between mb-4" >
+                <li class=" participant d-flex justify-content-between mb-4"  style="width: 40vw; box-sizing:content-box;">
                     <div class="card w-100">
                     <div class="card-header d-flex justify-content-between p-3">
-                        <p class="fw-bold mb-0"><%=message.user.username %></p>
+                        <a  style="text-decoration:none; color:black;" data-turbo='false' href="<%=user_path(message.user) %>"><p class="fw-bold mb-0"><%=message.user.username %></p></a>
                         <p class="text-muted small mb-0"><i class="far fa-clock"></i> <%=  time_ago_in_words(message.created_at) %></p>
                     </div>
                     <div class="card-body">

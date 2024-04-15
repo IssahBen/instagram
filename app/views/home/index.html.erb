@@ -9,7 +9,7 @@
         
         </div>
   </div>
- 
+  <div> <%= render 'suggestions/suggestions_list', suggestions: @suggestions %></div>
 </div>
- <%= render 'suggestions/suggestions_list', suggestions: @suggestions %>
-  <%= render 'posts/form', post: Post.new %>
+
+  <%= render 'posts/form', post: Post.new %> 

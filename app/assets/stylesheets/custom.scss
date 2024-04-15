@@ -143,6 +143,7 @@ table {
 #search-contacts {
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
 
 .main {
@@ -182,8 +183,13 @@ table {
 
 .start-conversation {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
 }
 
 .participant-name {
     color: white;
+}
+
+.messenger-link {
+    text-decoration: none;
 }

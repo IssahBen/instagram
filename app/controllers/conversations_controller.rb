@@ -16,6 +16,7 @@ class ConversationsController < ApplicationController
    def show 
     conversation = Conversation.find(params[:id])
     @messages = conversation.messages
+    
     session[:conversation_id] = conversation.id
     render turbo_stream: turbo_stream.replace("messaging_box",partial: "conversations/show",locals: {conversation: conversation})
    end 
