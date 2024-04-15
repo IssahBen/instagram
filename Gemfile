@@ -75,3 +75,5 @@ gem "font-awesome-sass", "~> 6.1.2"
 
 gem 'activestorage-validator'
 gem "byebug", "~> 11.1"
+gem 'erb_lint', require: false
+gem 'rubocop-rails', require: false

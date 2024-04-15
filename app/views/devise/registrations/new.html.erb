@@ -37,16 +37,16 @@
          <% end %>
          <% if notice %>
            <p class="notice"><%= notice %></p>
-         <% elsif alert%>
+         <% elsif alert %>
            <p class="alert"><%= alert %></p>
-         <%end%>
+         <% end %>
 
        </div>
      </div>
 
      <div class="card text-center py-2 mt-3 mx-auto" style="width: 23rem;">
        <div class="card-text">
-         have an account? 
+         have an account?
          <%= link_to  "Sign in", new_user_session_path, class: "fs-6 my-4 text-decoration-none text-info" %>
        </div>
      </div>

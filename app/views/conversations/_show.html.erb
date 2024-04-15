@@ -1,11 +1,8 @@
 <div class="col-md-6 col-lg-7 col-xl-8" style="width: 100%;">
     <%= turbo_stream_from "messages" %>
     <%= turbo_frame_tag "messages"  do %>
-        
-           
-                <%= render @messages %>
 
-              
+                <%= render @messages %>
 
     <% end %>
     <li class=" mb-3">

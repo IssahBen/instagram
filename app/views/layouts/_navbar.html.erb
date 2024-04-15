@@ -24,7 +24,7 @@
        </div>
 
        <div class="navbar-collapse gap-4">
-         <%=  link_to root_path, class: "text-dark" do %> 
+         <%= link_to root_path, class: "text-dark" do %>
           <i class="fa-solid fa-house fa-xl"></i>
           <% end %>
          <%= link_to conversations_path, class: "text-dark" do %>
@@ -79,14 +79,12 @@
                <%= link_to 'Settings', edit_user_registration_path, class: "dropdown-item" %>
              </li>
              <li>
-               <%= button_to 'Log out', destroy_user_session_path, class: "dropdown-item", method: :delete%>
+               <%= button_to 'Log out', destroy_user_session_path, class: "dropdown-item", method: :delete %>
              </li>
            </ul>
          </div>
        </div>
      </div>
    </div>
-  
- </nav> 
 
-
+ </nav>

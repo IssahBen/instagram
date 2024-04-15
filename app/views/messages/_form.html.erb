@@ -1,15 +1,15 @@
 
  <%= form_with(model: Message.new,id: "messageForm",class:"sticky-footer",data: { controller: :form, action: "turbo:submit-end->form#clear" }) do |form| %>
-    <%if message.errors.any? %>
+    <% if message.errors.any? %>
         <div  class=" alert alert-success alert-dismissible fade show col-sm-9" role="alert" id="errors-messages">
-            <h2><%= pluralize(message.errors.count, "error")%>dfddfdfdfd</h2>
+            <h2><%= pluralize(message.errors.count, "error") %>dfddfdfdfd</h2>
             <ul>
-                <% message.errors.each do |error|%>
+                <% message.errors.each do |error| %>
                     <li><%= error.full_message %></li>
                 <% end %>
                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </ul>
-            
+
         </div>
     <% end %>
   <div class="input-group mb-3">

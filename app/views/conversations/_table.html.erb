@@ -6,12 +6,11 @@
   </thead>
   <tbody>
      <% conversations.each do |conversation| %>
-               
-           
+
         <tr>
         <td>
             <%= render 'conversations/conversation', conversation: conversation %>
-           
+
         </td>
         </tr>
      <% end %>

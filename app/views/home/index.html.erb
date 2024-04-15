@@ -6,10 +6,10 @@
             <% @feeds.each do |p| %>
                 <%= render 'posts/post', post: p %>
             <% end %>
-        
+
         </div>
   </div>
   <div> <%= render 'suggestions/suggestions_list', suggestions: @suggestions %></div>
 </div>
 
-  <%= render 'posts/form', post: Post.new %> 
+  <%= render 'posts/form', post: Post.new %>
